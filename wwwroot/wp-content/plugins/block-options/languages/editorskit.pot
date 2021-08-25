@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:132
+msgid "Typography Settings"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:138
+msgid "Font Family"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:147
+msgid "Font Weight"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:163
+msgid "Reset"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:62
+msgid "Select Google Font"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:63
+msgid "Arial"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:64
+msgid "Helvetica"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:65
+msgid "Times New Roman"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:66
+msgid "Georgia"
+msgstr ""
+
+#: src/add-ons/typography/src/block-panel/typography/index.js:74
+msgid "Select Font Weight"
+msgstr ""
