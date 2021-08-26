@@ -3,7 +3,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 <br></br>
 
 # Step 1: install WordPress.org
-<br></br>
+
 ## pre-requisite
 - XAMPP -> [Download](https://www.apachefriends.org/download.html)
 - WordPress -> [Download](https://wordpress.org/)
@@ -38,7 +38,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 <br></br>
 
 # Step 2: mirate our live web app to local host
-<br></br>
+
 ## pre-requisite:
 
 [**ta28.sql**](https://github.com/VictorW010/DroughtWise/blob/main/ta28.sql)
