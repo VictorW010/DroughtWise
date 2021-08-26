@@ -4,6 +4,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 <br></br>
 
 # Step 1: install WordPress.org
+<br></br>
 
 ## pre-requisite
 <br></br>
@@ -40,6 +41,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 <br></br>
 
 # Step 2: mirate our live web app to local host
+<br></br>
 
 ## pre-requisite:
 <br></br>
