@@ -1,13 +1,13 @@
 # Welcome to DroughtWise!
 If you are a starter who has no experience in using WordPress, don't worry! I will guide you through the installation and use of the web page step-by-step. If you are an expert, you can directly jump to Step 2! Thank you for your patience, enjoy it!
-
+<br></br>
 
 # Step 1: install WordPress.org
-
+<br></br>
 ## pre-requisite
 - XAMPP -> [Download](https://www.apachefriends.org/download.html)
 - WordPress -> [Download](https://wordpress.org/)
-
+<br></br>
 
 ## setup localhost
 1. open XAMPP, you can see the light of **Status** is **yellow** or **red**, this means the server is down at the moment
@@ -16,7 +16,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 4. click **Network**, there should be 2 localhosts, enable a host for your project (normally enable localhost:8080 -> 80)
 5. click **volumes**, the directory(/opt/lampp) shown is the root of server, then click **Mount** to activate it
 6. click **Explore** you can open the root directory, find and open the folder named **htdocs**
-
+<br></br>
 ## buildup local database
 1. open your browser(Chrome or FireFox recommended) and visit http://localhost:xxxx/phpmyadmin/ (**replace xxxx with the port number enabled in XAMPP**)
 2. then you will be directed to **phpMyAdmin**, the panel where you can modify your local database
@@ -26,7 +26,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 6. choose a secure password and enter it in the **Password** field, re-enter the password in the Re-type field
 7. leave all options under **Global privileges** at their defaults
 8. click **Go**
-
+<br></br>
 ## install WordPress
 1. visit http://localhost:xxxx/wp-admin/install.php
 2. wordpress asks for the information about the **database**
@@ -35,16 +35,16 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 5. reopen http://localhost:xxxx/wordpress, you can now register an account for your website
 6. after registration, you can access web page with your account!
 
-
+<br></br>
 
 # Step 2: mirate our live web app to local host
-
+<br></br>
 ## pre-requisite:
 
 [**ta28.sql**](https://github.com/VictorW010/DroughtWise/blob/main/ta28.sql)
 
 [**wp-content**](https://github.com/VictorW010/DroughtWise/tree/main/wwwroot/wp-content)
-
+<br></br>
 ## database migration
 
 1. create the database that was created in Step 1
@@ -59,14 +59,14 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 10. in **option_value** section, change text to http://localhost:8080/wordpress (depends on your settings), then click Go
 11. do the same operation to the **second record**
 12. this makes sure the route is correct on local host
-
+<br></br>
 ## content migration
 1. copy and paste **wp-content** to **htdocs/wordpress/**
 2. **replace** the original wp-content with ours
 3. Done! just access via http://localhost:8080/wordpress/ (depends on your settings)
 
 
-
+<br></br>
 # Where are the files?
 
 - wp-content/uploads/2021/08 contains all the pictures loaded in the web app
@@ -77,7 +77,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 
 - CSS files are directly written in the **Additional CSS**, which can be accessed by clicking **Customise** at top of the screen (needs to be in the edit mode first)
 
-
+<br></br>
 # How to Edit and Debug?
 1. for editing, go to http://localhost:8080/wordpress/wp-admin/ (depends on your settings)
 2. login with **the account you registered in Step 1 -> install WordPress -> 5**.
@@ -86,8 +86,8 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 5. also, in the dashboard, there might be some warnings, from those info you can easily track the location of the file
 Note: some issue may happen after mirating the live web to localhost but they are usually not fetal. Just follow the instruction in the dashboard to solve them. 
 
-
-
+<br></br>
+<br></br>
 # Thanks for your reading, hope you have a good time!
 Please feel free to [contact us](https://mahara.infotech.monash.edu/group/view.php?id=1930) if you have any question!
 
