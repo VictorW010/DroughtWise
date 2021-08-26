@@ -7,7 +7,6 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 <br></br>
 
 ## pre-requisite
-<br></br>
 - XAMPP -> [Download](https://www.apachefriends.org/download.html)
 - WordPress -> [Download](https://wordpress.org/)
 <br></br>
@@ -44,7 +43,6 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 <br></br>
 
 ## pre-requisite:
-<br></br>
 
 [**ta28.sql**](https://github.com/VictorW010/DroughtWise/blob/main/ta28.sql)
 
