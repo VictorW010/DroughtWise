@@ -94,7 +94,7 @@ SELECT * FROM `wp_posts` WHERE post_status = 'publish';
 ```
 8. then you can click **Edit** to modify them
 9. also, in the dashboard, there might be some warnings, this is because our project was migrated from Azure Cloud Server, some theme elements may not work properly. But with those warnings you can easily track reasons, usually they are not fatal.
-10. 
+10. ```chmod 777 wordpress``` (where wordpress is the root folder) helps a lot for getting permissions.
 <br></br>
 <br></br>
 # Thanks for your reading, hope you have a good time!
