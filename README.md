@@ -1,10 +1,12 @@
 # Welcome to DroughtWise!
+<br></br>
 If you are a starter who has no experience in using WordPress, don't worry! I will guide you through the installation and use of the web page step-by-step. If you are an expert, you can directly jump to Step 2! Thank you for your patience, enjoy it!
 <br></br>
 
 # Step 1: install WordPress.org
 
 ## pre-requisite
+<br></br>
 - XAMPP -> [Download](https://www.apachefriends.org/download.html)
 - WordPress -> [Download](https://wordpress.org/)
 <br></br>
@@ -40,6 +42,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 # Step 2: mirate our live web app to local host
 
 ## pre-requisite:
+<br></br>
 
 [**ta28.sql**](https://github.com/VictorW010/DroughtWise/blob/main/ta28.sql)
 
@@ -54,7 +57,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 5. click choose file and select **ta28.sql** you downloaded from our git
 6. keep all things unchanged and click Go
 7. then all tables will be migrated to your local database successfully (but not finish yet!!)
-8. click table **wp-options**
+8. click table **wp_options**
 9. click **edit** in the **first record**
 10. in **option_value** section, change text to http://localhost:8080/wordpress (depends on your settings), then click Go
 11. do the same operation to the **second record**
@@ -71,9 +74,9 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 
 - wp-content/uploads/2021/08 contains all the pictures loaded in the web app
 - as WordPress loads pages dynamically, it stored **all the posts in the database**
-  - all **pages** are stored in table **wp-posts**
+  - all **pages** are stored in table **wp_posts**
   - all **PHP code** are stored in table **wp_xyz_ips_short_code** (XYZ PHP Code is a plugin that provides PHP snippets in which we can write our code, then the code will be called by adding a "shortcode" section into the page
-  - table **wp-services** is used to store required information so that we could use php functions to query from backend
+  - table **wp_services** is used to store required information so that we could use php functions to query from backend
 
 - CSS files are directly written in the **Additional CSS**, which can be accessed by clicking **Customise** at top of the screen (needs to be in the edit mode first)
 
@@ -83,11 +86,18 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 2. login with **the account you registered in Step 1 -> install WordPress -> 5**.
 3. after login, you can play around in **dashboard** or just go back to http://localhost:8080/wordpress/ (depends on your settings)
 4. now at the top you can see some options to edit the page!
-5. also, in the dashboard, there might be some warnings, from those info you can easily track the location of the file
-Note: some issue may happen after mirating the live web to localhost but they are usually not fetal. Just follow the instruction in the dashboard to solve them. 
-
+5. click customize page, your are able to edit **header**, **footer** and create your own CSS code in **Additional CSS**
+6. if you want to edit the body, just find the corresponding table in **database -> wp_posts**
+7. an easy way to find all pages is to execute this statement:
+```sql
+SELECT * FROM `wp_posts` WHERE post_status = 'publish';
+```
+8. then you can click **Edit** to modify them
+9. also, in the dashboard, there might be some warnings, this is because our project was migrated from Azure Cloud Server, some theme elements may not work properly. But with those warnings you can easily track reasons, usually they are not fatal.
+10. 
 <br></br>
 <br></br>
 # Thanks for your reading, hope you have a good time!
+<br></br>
 Please feel free to [contact us](https://mahara.infotech.monash.edu/group/view.php?id=1930) if you have any question!
 
