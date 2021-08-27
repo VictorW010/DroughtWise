@@ -20,7 +20,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 6. click **Explore** you can open the root directory, find and open the folder named **htdocs**
 <br></br>
 ## buildup local database
-1. open your browser(Chrome or FireFox recommended) and visit http://localhost:xxxx/phpmyadmin/ (**replace xxxx with the port number enabled in XAMPP**)
+1. open your browser(Chrome or FireFox recommended) and visit ```http://localhost:xxxx/phpmyadmin/``` (**replace xxxx with the port number enabled in XAMPP**)
 2. then you will be directed to **phpMyAdmin**, the panel where you can modify your local database
 3. extract the zip file of wordpress you just downloaded, and you can get a folder **wordpress**
 4. copy and paste **wordpress** into **htdocs**
@@ -30,11 +30,11 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 8. click **Go**
 <br></br>
 ## install WordPress
-1. visit http://localhost:xxxx/wp-admin/install.php
+1. visit ```http://localhost:xxxx/wp-admin/install.php```
 2. wordpress asks for the information about the **database**
 3. fill the form (do not need to change prefix if there is only one database for wordpress)
 4. create a file **wp-conf.php**, or you can just modify **wp-conf-sample.php**, fill database info with yours and save it
-5. reopen http://localhost:xxxx/wordpress, you can now register an account for your website
+5. reopen ```http://localhost:xxxx/wordpress```, you can now register an account for your website
 6. after registration, you can access web page with your account!
 
 <br></br>
@@ -59,14 +59,14 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 7. then all tables will be migrated to your local database successfully (but not finish yet!!)
 8. click table **wp_options**
 9. click **edit** in the **first record**
-10. in **option_value** section, change text to http://localhost:8080/wordpress (depends on your settings), then click Go
+10. in **option_value** section, change text to ```http://localhost:8080/wordpress``` (depends on your settings), then click Go
 11. do the same operation to the **second record**
 12. this makes sure the route is correct on local host
 <br></br>
 ## content migration
 1. copy and paste **wp-content** to **htdocs/wordpress/**
 2. **replace** the original wp-content with ours
-3. Done! just access via http://localhost:8080/wordpress/ (depends on your settings)
+3. Done! just access via ```http://localhost:8080/wordpress/``` (depends on your settings)
 
 
 <br></br>
@@ -82,9 +82,9 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 
 <br></br>
 # How to Edit and Debug?
-1. for editing, go to http://localhost:8080/wordpress/wp-admin/ (depends on your settings)
+1. for editing, go to ```http://localhost:8080/wordpress/wp-admin/``` (depends on your settings)
 2. login with **the account you registered in Step 1 -> install WordPress -> 5**.
-3. after login, you can play around in **dashboard** or just go back to http://localhost:8080/wordpress/ (depends on your settings)
+3. after login, you can play around in **dashboard** or just go back to ```http://localhost:8080/wordpress/``` (depends on your settings)
 4. now at the top you can see some options to edit the page!
 5. click customize page, your are able to edit **header**, **footer** and create your own CSS code in **Additional CSS**
 6. if you want to edit the body, just find the corresponding table in **database -> wp_posts**
