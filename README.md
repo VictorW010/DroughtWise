@@ -67,6 +67,7 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 1. copy and paste **wp-content** to **htdocs/wordpress/**
 2. **replace** the original wp-content with ours
 3. Done! just access via ```http://localhost:8080/wordpress/``` (depends on your settings)
+4. USE ```123``` AS PASSWORD TO LOGIN
 
 
 <br></br>
