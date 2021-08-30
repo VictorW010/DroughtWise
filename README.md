@@ -101,6 +101,7 @@ SELECT * FROM `wp_posts` WHERE post_status = 'publish';
 ```php
 define( 'FS_METHOD', 'direct' );
 ```
+12.if some of the pictures can not be properly loaded, try elevating privilege via ```chmod -R 777 filename``` 
 <br></br>
 <br></br>
 # Thanks for your reading, hope you have a good time!
