@@ -66,7 +66,9 @@ If you are a starter who has no experience in using WordPress, don't worry! I wi
 ## content migration
 1. copy and paste **wp-content** to **htdocs/wordpress/**
 2. **replace** the original wp-content with ours
-3. Done! just access via ```http://localhost:8080/wordpress/``` (depends on your settings)
+3. in current location ```chmod -R 777 wp-content```
+4. Done! just access via ```http://localhost:8080/wordpress/``` (depends on your settings)
+5. USE ```123``` AS PASSWORD TO LOGIN
 
 
 <br></br>
@@ -99,6 +101,7 @@ SELECT * FROM `wp_posts` WHERE post_status = 'publish';
 ```php
 define( 'FS_METHOD', 'direct' );
 ```
+12.if some of the pictures can not be properly loaded, try elevating privilege via ```chmod -R 777 filename``` 
 <br></br>
 <br></br>
 # Thanks for your reading, hope you have a good time!
