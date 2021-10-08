@@ -1,0 +1,275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPM News API\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-16 21:46+0000\n"
+"PO-Revision-Date: 2020-02-16 21:46+0000\n"
+"Last-Translator: admin <myemail@test.com>\n"
+"Language-Team: Deutsch\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#: wpm-news-api-settings.php:58
+msgid "WPMagic Automated News plugin will run on its own after a quick setup."
+msgstr ""
+
+#: wpm-news-api-settings.php:59
+msgid ""
+"Folow the instructions bellow and fill the required data. After that, sit "
+"back and enjoy a fully automated News website."
+msgstr ""
+
+#: wpm-news-api-settings.php:62
+msgid ""
+"First add your API Key. Go ahead and hit the \"Fetch latest News\" button in "
+"order to fetch some News (see that is working)."
+msgstr ""
+
+#: wpm-news-api-settings.php:63
+msgid ""
+"After that configure the article source as post category (new sources will "
+"be available periodically, as they appear with the fetched News)."
+msgstr ""
+
+#: wpm-news-api-settings.php:64
+msgid ""
+"That's it. New content from your chosen API Url will be fetched and posted "
+"on the website every hour."
+msgstr ""
+
+#: wpm-news-api-settings.php:69
+msgid "Debugging Info:"
+msgstr ""
+
+#: wpm-news-api-settings.php:74
+msgid ""
+"The sources have been saved. You can now edit them into \"Configure Article "
+"Source as Post Category\" Menu."
+msgstr ""
+
+#: wpm-news-api-settings.php:80
+msgid ""
+"The default \"Post Category\" to publish the News have been saved. You can "
+"change it into \"Configure Article Source as Post Category\" Menu."
+msgstr ""
+
+#: wpm-news-api-settings.php:84
+msgid "The News have not changed since last fetch. Please wait."
+msgstr ""
+
+#: wpm-news-api-settings.php:86
+msgid "Force publish fetched News?"
+msgstr ""
+
+#: wpm-news-api-settings.php:87
+msgid "Yes. Publish them anyway."
+msgstr ""
+
+#: wpm-news-api-settings.php:92
+msgid "post thumbnail success"
+msgstr ""
+
+#: wpm-news-api-settings.php:95
+msgid "no file extension"
+msgstr ""
+
+#: wpm-news-api-settings.php:98
+msgid ""
+"Error. The News can't be published using Force Publish method. Please wait "
+"new content from the API to be fetched on Cron's run."
+msgstr ""
+
+#: wpm-news-api-settings.php:101
+msgid "View/Edit News API Key"
+msgstr ""
+
+#: wpm-news-api-settings.php:104
+msgid "Configure Article Source as Post Category"
+msgstr ""
+
+#: wpm-news-api-settings.php:107
+msgid "News API Key:"
+msgstr ""
+
+#: wpm-news-api-settings.php:110
+msgid "API URL:"
+msgstr ""
+
+#: wpm-news-api-settings.php:113
+msgid "Save"
+msgstr ""
+
+#: wpm-news-api-settings.php:116
+msgid "Fetch latest news"
+msgstr ""
+
+#: wpm-news-api-settings.php:119
+msgid "Loading..."
+msgstr ""
+
+#: wpm-news-api-settings.php:122
+msgid "Click on the link above to get the latest news from choosed API URL."
+msgstr ""
+
+#: wpm-news-api-settings.php:125
+msgid "More plugins by"
+msgstr ""
+
+#: wpm-news-api-settings.php:128
+msgid " Settings"
+msgstr ""
+
+#: wpm-news-api-settings.php:131
+msgid "Source:"
+msgstr ""
+
+#: wpm-news-api-settings.php:134
+msgid "Target categories:"
+msgstr ""
+
+#: wpm-news-api-settings.php:137
+msgid "Define News Source => Post Category."
+msgstr ""
+
+#: wpm-news-api-settings.php:138
+msgid ""
+"This will help organise the Site. Each News from a particular source (ex. "
+"news.com.au) will be published into a specific category (ex. \"News\" or "
+"\"Latest\")."
+msgstr ""
+
+#: wpm-news-api-settings.php:139
+msgid ""
+"You can see the source for each article bellow, in the list of fetched "
+"articles."
+msgstr ""
+
+#: wpm-news-api-settings.php:142
+msgid "New * "
+msgstr ""
+
+#: wpm-news-api-settings.php:145
+msgid "Default Post category for News:"
+msgstr ""
+
+#: wpm-news-api-settings.php:148
+msgid "News to Post category Pairing:"
+msgstr ""
+
+#: wpm-news-api-settings.php:151
+msgid "Choose the default Post category for the News:"
+msgstr ""
+
+#: wpm-news-api-settings.php:154
+msgid "License Key"
+msgstr ""
+
+#: wpm-news-api-settings.php:157
+msgid ""
+"In order to enable automatic updates for this plugin, please enter your "
+"License Key bellow."
+msgstr ""
+
+#: wpm-news-api-settings.php:164
+msgid "Settings"
+msgstr ""
+
+#: wpm-news-api-settings.php:167
+msgid "Help"
+msgstr ""
+
+#: wpm-news-api-settings.php:170
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: wpm-news-api-settings.php:173
+msgid "An error occurred"
+msgstr ""
+
+#: wpm-news-api-settings.php:176
+msgid "Error! API credentials were not saved."
+msgstr ""
+
+#: wpm-news-api-settings.php:180
+#, php-format
+msgid "API key from %s/account"
+msgstr ""
+
+#: wpm-news-api-settings.php:183
+#, php-format
+msgid "ex. Top headlines from Australia: %s/v2/top-headlines?country=au"
+msgstr ""
+
+#: wpm-news-api-settings.php:186
+msgid "API credentials have been saved."
+msgstr ""
+
+#: wpm-news-api-settings.php:189
+msgid "API crededatantials have been updated."
+msgstr ""
+
+#: wpm-news-api-settings.php:192
+msgid "The News have been published."
+msgstr ""
+
+#: wpm-news-api-settings.php:195
+msgid ""
+"License Key have been saved. If your licence is valid, the automatic updates "
+"will be available for this plugin."
+msgstr ""
+
+#: wpm-news-api-settings.php:198
+msgid "Save changes"
+msgstr ""
+
+#: src/wpm_news_api_pluginclass.php:103
+#, php-format
+msgid ""
+"For best resuts, it is recommended to use the plugin with <a href=\"%s\" "
+"target=\"_blank\">%s</a> WP Theme or NewsMag Theme."
+msgstr ""
+
+#: src/wpm_news_api_pluginclass.php:120
+#, php-format
+msgid ""
+"Create an account at <a href=\"%s\" target=\"_blank\">%s</a> and fill the "
+"required data bellow."
+msgstr ""
+
+#: src/wpm_news_api_pluginclass.php:453
+msgid "Publish all"
+msgstr ""
+
+#: src/wpm_news_api_pluginclass.php:454
+#, php-format
+msgid "Latest fetched News (%s):"
+msgstr ""
+
+#: src/wpm_news_api_pluginclass.php:468
+msgid "Read more"
+msgstr "weiterlesen"
+
+#: src/wpm_news_api_pluginclass.php:927
+msgid "read more"
+msgstr "weiterlesen"
+
+#. Name of the plugin
+msgid "WPM News API"
+msgstr ""
+
+#. Description of the plugin
+msgid "WP Plugin autoblog News API"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wpmagic.work"
+msgstr ""
+
+#. Author of the plugin
+msgid "WPMagic"
+msgstr ""
