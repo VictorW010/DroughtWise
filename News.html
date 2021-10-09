@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        body{
+    /* background:linear-gradient(135deg,#EBF3FC,#DEEAF8); */
+    background-color: #F8F1EB; 
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:100% 100%;
+
+    }
+
+
+    #root {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+    /* .head{
+    background-color: #FFEA80;
+    } */
+
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px; 
+    }
+
+    .NewHeads{
+        font-size: 20px;
+        margin: 10px;
+        color: black;
+        position: relative;
+        right: 40%;
+    }
+
+    .author{
+        font-size: 20px;
+        /* color: white; */
+        border: none;
+    }
+
+    .date{
+        font-size: 15px;
+        /* color: white; */
+        border: none;
+    }
+
+    .cardNews{
+    position: relative;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px; 
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px; 
+    margin: 1rem;
+    /* background-color: rgba(255,255,255,0.9); */
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 20px rgba(128,128,128,0.4);
+    border: none;
+    /* padding: 10px; */
+    top: 0px;
+    }
+    .cardNews:hover{
+    transition: top 0.1s;
+    top: -10px;
+    }
+    .card_header1{
+    /* background:linear-gradient(135deg,#835D58,#A39990);
+    background-color: #835D58; */
+    color: white;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px; 
+    padding-top:10px; 
+    flex-direction: column;
+    }
+    
+    .card_body{
+    padding: 20px 40px 10px 40px;
+    font-size: 18px;
+    color: #666666;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    }
+
+
+    @media screen and (min-width: 600px) {
+    .cardNews {
+        flex: 1 1 calc(50% - 2rem);
+    }
+    }
+
+    @media screen and (min-width: 900px) {
+    .cardNews {
+        flex: 1 1 calc(33% - 2rem);
+    }
+    }
+    </style>
+    
+    <title>News</title>
+</head>
+<body>
+    <div id="root" style="font-size: 36px;">Latest News</div>
+    <div id='farmer'>
+        <script src = "drought.js"></script>
+        <!-- <script src = "climate.js"></script> -->
+        <!-- <script src = "farmer.js"></script> -->
+        <!-- <script>
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        </script> -->
+        <!-- <script>
+            // const app = document.getElementById('root');
+            
+            const app = document.getElementById('root');
+            const head = document.createElement('div');
+            head.setAttribute('class','head');
+            app.appendChild(head);
+            // const container = document.createElement('div');
+            // container.setAttribute('class','container');
+            // const farmerD = document.createElement("div");
+            // farmerD.setAttribute('class','NewHeads');
+           
+            for(let i=0;i<3;i++)
+            {
+            // farmerD.appendChild(fDiv);
+            // app.appendChild(fDiv);
+            // var container = document.createElement('div');
+            // container.setAttribute('class','container');
+            // app.appendChild(container);
+            // app.appendChild(fDiv);
+            var request = new XMLHttpRequest();
+            var strL =["farm+australia","drought+farming+australia","climate+australia+rainfall"];
+            var urlNew = "https://newsapi.org/v2/everything?q="+strL[i]+"&google_domain=google.com&sortby=publishedAt&order=asc&pageSize=50&apiKey=d450a4cd89c942319a541371bb3e4d5d";
+            
+            // request.open('GET',"https://newsapi.org/v2/everything?q="+strL[i]+"&google_domain=google.com&sortby=publishedAt&order=asc&pageSize=50&apiKey=d450a4cd89c942319a541371bb3e4d5d", true);
+            request.open('GET', urlNew, true);
+            // request.setRequestHeader("Access-Control-Allow-Origin", "*");
+            // request.setRequestHeader("Access-Control-Allow-Credentials", "true");
+            // request.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+            console.log('ok');
+            
+            
+            request.onload = function(){
+                //begin to access JSON data here
+                var farmerD = document.createElement("div");
+                farmerD.setAttribute('class','NewHeads');
+                const strNew = ["Farming", "Drought", "Climate"];
+                var fDiv = document.createTextNode(strNew[i] + " News");
+                farmerD.appendChild(fDiv);
+                var container = document.createElement('div');
+                container.setAttribute('class','container');
+                app.appendChild(farmerD);
+                app.appendChild(container);
+                var count = 0;
+                
+                var data = JSON.parse(this.response).articles;
+                console.log(data.length);
+                if(request.status >= 200 && request.status <= 500){
+
+                    data.forEach(movie =>{
+                        // console.log(movie.source)
+                        var h2 = document.createElement('h5');
+                        h2.textContent = movie.title;
+                        var p = document.createElement('p');
+                        // movie.description = movie.description.substring(0,500);
+                        // p.textContent = `${movie.description}...`;
+                        tempS = strL[i].split("+")[0];
+                        
+                        if(movie.title.includes(tempS)&&count<3)
+                        // if(count<6)
+                        {
+                        var idName = tempS + count;
+                        console.log(idName);
+                        count++;
+                        var card = document.createElement('div');
+                        card.setAttribute('class','card');
+                        // card.setAttribute('id',idName);
+                        // console.log("id = " + index);
+                        // var e1 = document.getElementsByClassName("card")[index];
+                        // console.log(e1);
+                        // e1.addEventListener("click", function(){console.log("change");}, false);
+
+                        var cardHeader = document.createElement('div');
+                        cardHeader.setAttribute('class','card_header1');
+                        cardHeader.style.backgroundImage = "url('" + movie.urlToImage+ "')";
+                        cardHeader.style.backgroundSize = "100% 100%";
+                        cardHeader.style.backgroundPosition = "center";
+                        cardHeader.style.backgroundRepeat= "repeat-y";
+                        var author = document.createElement('small');
+                        author.setAttribute('class','author');
+                        if(movie.author === null|| movie.author  === undefined || movie.author === ''){
+                            author.textContent = `-- ${movie.source.name} --`;
+                        }else{
+                            if(movie.author.includes(","))
+                                movie.author = movie.author.split(",")[0];
+                            author.textContent = `-- ${movie.author} --`;
+                            
+                        }
+                        var date = document.createElement('small');
+                        date.setAttribute('class','date');
+                        var strDate = movie.publishedAt.split("T")[0];
+                        date.textContent = `${strDate}`;
+                        var cardBody =document.createElement('div');
+                        cardBody.setAttribute('class','card_body');
+                        card.onclick= function(){
+                            window.location.href= movie.url;
+                            // console.log(movie.url);
+                        }
+                        container.appendChild(card);
+                        card.appendChild(cardHeader);
+                        // cardHeader.appendChild(h2);
+                        // cardHeader.appendChild(author);
+                        // cardHeader.appendChild(date);
+                        card.appendChild(cardBody);
+                        cardBody.appendChild(h2);
+                        cardBody.appendChild(author);
+                        cardBody.appendChild(date);
+                        // cardBody.appendChild(btn);
+                        } 
+                        
+                        }
+                        
+                    )
+                        
+                }else{
+                    console.log('error')
+                }
+                
+            };
+            // console.log("request"+request);
+
+            request.send();
+        }
+            // request.send();
+            </script> -->
+    </div>
+    
+    
+</body>
+</html>
